@@ -7,14 +7,14 @@ export const FirstPage = () => {
     const [value, setValue] = useState(null);
 
     return (
-        <div>
+        <div id='parent'>
             <input onChange={e => {
                 setValue(e.target.value)
 
             }} value={value} />
 
             <Portal>
-                <span>{value}</span>
+                <span id='child'>{value}</span>
             </Portal>
         </div>);
 };
