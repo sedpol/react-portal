@@ -11,7 +11,7 @@ export const Portal = (props) => {
             portal.removeChild(el.current);
         };
 
-    });
+    }, [props.children]);
 
     return ReactDOM.createPortal(props.children, el.current);
 }

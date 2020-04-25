@@ -4,7 +4,7 @@ import { Portal } from '../Portal/Portal';
 
 export const FirstPage = () => {
 
-    const [value, setValue] = useState(null);
+    const [value, setValue] = useState('');
 
     return (
         <div id='parent'>
